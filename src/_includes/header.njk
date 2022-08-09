@@ -1,0 +1,28 @@
+<header class="page-header">
+  <div class="container">
+    <div class="page-header__content">
+      <a href="/" class="logo">
+      <svg id="logo" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
+				<title>Agni Murthy — Logo</title>
+				<desc>User Experience Designer</desc>
+				<path d="M28.4998,0.5002 C28.4998,4.9162 24.9168,8.5002 20.4998,8.5002 L14.4998,8.5002 C11.1868,8.5002 8.4998,11.1872 8.4998,14.5002 C8.4998,17.8132 11.1868,20.5002 14.4998,20.5002 C17.8128,20.5002 20.4998,17.8132 20.4998,14.5002" class="inner-1"></path>
+            	<path d="M28.4998,0.5002 L14.4998,0.5002 C6.7668,0.5002 0.4998,6.7672 0.4998,14.5002 C0.4998,22.2332 6.7668,28.5002 14.4998,28.5002 C17.4778,28.5002 20.1488,27.2002 21.9808,25.1372" class="outer-1"></path>
+            	<path d="M20.4998,8.5002 L20.4998,20.5002 C20.4998,24.9162 24.0838,28.5002 28.4998,28.5002 L28.4998,0.5002" class="outer-2"></path>
+			</svg>
+      </a>
+      <nav>
+        <ul role="list" class="nav-list flex-group">
+          <li>
+            <a {% if page.url == '/' %} class="current"{% endif %} href="/">Home</a>
+          </li>
+          <li>
+            <a {% if '/writing/' in page.url %} class="current"{% endif %} href="/writing/">Writing</a>
+          </li>
+          <li>
+            <a {% if '/about/' in page.url %} class="current"{% endif %} href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

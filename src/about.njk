@@ -1,0 +1,102 @@
+---
+title: Agni Murthy
+layout: 'base.njk'
+---
+<main>
+<section class="hero">
+  <div class="container">
+      <div class="hero__content flow">
+        {# <h1 class="section-title">Agni Murthy</h1> #}
+        <h1 class="xlarge">Design that isn't deliberate is just decoration.</h1>
+        {# <p>Design that isn't deliberate is just decoration. I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve run into, useful resources, and more.</p>
+        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p> #}
+        {# <div class="flex-group">
+          <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
+          <a href="./blog" class="btn btn--neutral">Most recent articles</a>
+        </div> #}
+      </div>
+      <div class="flex-group">
+        <p>Hello, I'm Agni. I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve run into, useful resources, and more.</p>
+        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
+      </div>
+  </div>
+</section>
+
+<div class="container flow">
+<div class="case-logos">
+          <h5>Used by</h5>
+          <ul class="sn-grid-4">
+            <li><a>
+                <p>Apple</p><img src="https://shiftnudge.com/_assets/img/logo/apple.svg" alt="apple logo"></a></li>
+            <li><a>
+                <p>EA Sports</p><img src="https://shiftnudge.com/_assets/img/logo/ea.svg" alt="ea logo"></a></li>
+            <li><a>
+                <p>Intercom</p><img src="https://shiftnudge.com/_assets/img/logo/intercom.svg" alt="intercom logo"></a></li>
+            <li><a>
+                <p>Lyft</p><img src="https://shiftnudge.com/_assets/img/logo/lyft.svg" alt="lyft logo"></a></li>
+            <li><a>
+                <p>Metalab</p><img src="https://shiftnudge.com/_assets/img/logo/metalab.svg" alt="metalab logo"></a></li>
+            <li><a>
+                <p>Microsoft</p><img src="https://shiftnudge.com/_assets/img/logo/microsoft.svg" alt="microsoft logo"></a></li>
+            <li><a>
+                <p>Zenly</p><img src="https://shiftnudge.com/_assets/img/logo/popsicle.svg" alt="zenly logo"></a></li>
+            <li><a>
+                <p>Quicken</p><img src="https://shiftnudge.com/_assets/img/logo/quicken.svg" alt="quicken logo"></a></li>
+            <li><a>
+                <p>Spline</p><img src="https://shiftnudge.com/_assets/img/logo/spline.svg" alt="spline logo"></a></li>
+            <li><a>
+                <p>Stark</p><img src="https://shiftnudge.com/_assets/img/logo/stark.svg" alt="stark logo"></a></li>
+            <li><a>
+                <p>UI8</p><img src="https://shiftnudge.com/_assets/img/logo/ui8.svg" alt="ui8 logo"></a></li>
+            <li><a>
+                <p>Webflow</p><img src="https://shiftnudge.com/_assets/img/logo/webflow.svg" alt="webflow logo"></a></li>
+          </ul>
+        </div>
+        </div>
+
+<section class="project-grid">
+  <div class="container flow">
+    <h2 class="text-center">Selected Projects</h2>
+    <div class="case-logos">
+    <ul class="case-grid">
+      <li>
+        <a>
+          <p>LendingClub</p>
+          <img src="/assets/logos/lendingclub-symbol.svg" alt="lendingclub logo"/>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p class="multi-line">Reliance Home <br>Finance</p>
+          <img src="/assets/logos/reliance-home-finance-symbol.svg" alt="reliance home finance logo"/>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p>Kentik</p>
+          <img src="/assets/logos/kentik-symbol.svg" alt="kentik logo"/>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p>Hive</p>
+          <img src="/assets/logos/hive-symbol.svg" alt="hive logo"/>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="featured-articles" class="featured-articles">
+  <div class="container container--narrow flow">
+    <h2 class="section-title text-center ">Featured articles</h2>
+    <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
+    <ul role="list" class="articles__list flow">
+      {%- for post in collections.featured | reverse -%}
+        {% include "article-snippet.njk" %}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section> 
+    </main>

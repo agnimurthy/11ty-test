@@ -1,0 +1,27 @@
+{
+  "name": "11ty-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnimurthy/11ty-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agnimurthy/11ty-test/issues"
+  },
+  "homepage": "https://github.com/agnimurthy/11ty-test#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^3.0.3"
+  }
+}

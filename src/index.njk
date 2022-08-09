@@ -1,0 +1,42 @@
+---
+title: Agni Murthy
+layout: 'base.njk'
+---
+<main>
+<section class="hero">
+  <div class="container">
+      <div class="hero__content">
+        <h1 class="xlarge">Design that isn't deliberate is just decoration.</h1>
+      </div>
+      <div class="description flow">
+        <p>Hello, I'm Agni—a product designer, music enthusiast, and LinkedIn performance artist. I'm currently building the future of network tools at <a href="https://kentik.com" target="blank">Kentik</a>.</p>
+        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
+      </div>
+  </div>
+</section>
+
+<section class="project-grid">
+  <div class="container flow">
+  <div class="case-logos">
+    <ul class="case-grid-3">
+      <li><a><p>LendingClub</p><img src="/assets/logos/lendingclub-symbol.svg" alt="lendingclub logo"></a></li>
+      <li><a><p class="multi-line">Reliance Home <br class="responsive"> Finance</p><img src="/assets/logos/reliance-home-finance-symbol.svg" alt="reliance home finance logo" class="multi-line"></a></li>
+      <li><a><p>Hive</p><img src="/assets/logos/hive-symbol.svg" alt="hive logo"></a></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="featured-articles" class="featured-articles">
+  <div class="container flow">
+    <h2 class="section-title text-center ">Featured articles</h2>
+    <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
+    <ul role="list" class="articles__list flow">
+      {%- for post in collections.featured | reverse -%}
+        {% include "article-snippet.njk" %}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section> 
+
+</main>
